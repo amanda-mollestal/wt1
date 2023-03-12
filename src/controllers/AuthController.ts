@@ -47,7 +47,7 @@ export class AuthController {
    * @returns {string} - The redirect URL.
    */
   getRedirectUrl() {
-    const url = (`https://gitlab.lnu.se/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_REDIRECT_URI}&response_type=code&scope=${process.env.NEXT_PUBLIC_API_SCOPE}`)
+    const url = (`https://gitlab.lnu.se/oauth/authorize?client_id=${process.env.CLIENT_ID}&redirect_uri=${process.env.REDIRECT_URI}&response_type=code&scope=${process.env.API_SCOPE}`)
     return url
   }
 
